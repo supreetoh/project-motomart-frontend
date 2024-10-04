@@ -1,0 +1,98 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input id="firstName" formControlName="firstName" style="border: 1px solid #ccc; padding: 10px;">
+    <div *ngIf="form.get('firstName').invalid && form.get('firstName').touched" class="error" style="color: red; border: 1px solid red; padding: 5px; margin-top: 10px;">
+      Proper First Name is mandatory, Please enter correct format!
+    </div>
+  </div>
+
+
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" formControlName="lastName" style="border: 1px solid #ccc; padding: px;">
+    <div *ngIf="form.get('lastName').invalid && form.get('lastName').touched" class="error" style="color: red; border: 1px solid red; padding: 5px; margin-top: 10px;">
+      Proper Last Name is mandatory, Please enter correct format!
+    </div>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email">
+    <div *ngIf="form.get('email').invalid && form.get('email').touched" class="error" style="color: red; border: 1px solid red; padding: 5px; margin-top: 10px;">
+      Please enter a valid email address!
+    </div>
+  </div>
+
+  <div>
+    <label for="password">Enter Password:</label>
+    <input id="password" type="password" formControlName="password">
+    <div *ngIf="form.get('password').invalid && form.get('password').touched" class="error" style="color: red; border: 1px solid red; padding: 5px; margin-top: 10px;">
+      Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character, and be at least 8 characters long!
+    </div>
+  </div>
+
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input id="confirmPassword" type="password" formControlName="confirmPassword">
+    <div *ngIf="form.get('confirmPassword').invalid && form.get('confirmPassword').touched" class="error">
+      Passwords do not match!
+    </div>
+  </div>
+
+  <div>
+    <label for="street">Street:</label>
+    <input id="street" formControlName="street">
+    <div *ngIf="form.get('street').invalid && form.get('street').touched" class="error">
+      Street is mandatory, Please enter!
+    </div>
+  </div>
+
+  <div>
+    <label for="city">City:</label>
+    <input id="city" formControlName="city">
+    <div *ngIf="form.get('city').invalid && form.get('city').touched" class="error">
+      City is mandatory, Please enter!
+    </div>
+  </div>
+
+  <div>
+    <label for="state">State:</label>
+    <input id="state" formControlName="state">
+    <div *ngIf="form.get('state').invalid && form.get('state').touched" class="error">
+      State is mandatory, Please enter!
+    </div>
+  </div>
+
+  <div>
+    <label for="zip">Zip:</label>
+    <input id="zip" formControlName="zip">
+    <div *ngIf="form.get('zip').invalid && form.get('zip').touched" class="error">
+      Zip is mandatory, Please enter!
+    </div>
+  </div>
+
+  <div>
+    <label for="country">Country:</label>
+    <select id="country" formControlName="country">
+      <option value="India">India</option>
+      <option value="ABCD">ABCD</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="gender">Gender:</label>
+    <select id="gender" formControlName="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="checkbox" id="terms" formControlName="terms">
+    <label for="terms">I agree to the Terms of Service</label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

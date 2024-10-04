@@ -1,0 +1,98 @@
+<h1>Angular is all about {{title}} in Angular</h1>
+<br><br><br>
+
+<a target="_blank" href="http://ww.google.com/">
+  Google more about Angular Components
+</a>
+
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<button (click)="emitCustomEvent()">
+  Show Event emitted by a button
+</button>
+
+<br>
+
+<app-hello (messageEvent)="recieveMessage($event)"></app-hello>
+<p>{{ recievedMessage }}</p>
+
+<!-- [] means property binding -->
+ <app-hello [name]="variableDeclaredInParent"></app-hello>
+
+Show Variable Result <input type="checkbox" [(ngModel)] = "show" />
+<h1>ng If Working</h1>
+
+<p *ngIf="show">
+  Show checkbox is checked
+</p>
+<p *ngIf="!show">
+  Show checkbox is un-checked
+</p>
+
+<h1>ng If-Else</h1>
+<p *ngIf="show; else elseblock">
+  checkbox is created
+</p>
+
+<!-- Using ng-template, we create blocks or conditions which ultimately runs using ngIf only. -->
+ <ng-template #elseblock>
+  <p>checkbox us un-checked and we are able to show using #elseblock</p>
+ </ng-template>
+
+ <h1>ngif then else</h1>
+ <p *ngIf="show; then thenBlock2 else elseBlock2">
+  This will not be rendered - only used for mentioning conditions
+  Just to run a particular ng-template block
+ </p>
+
+ <ng-template #thenBlock2>
+  <p>checkbox is checked using thenBlock2</p>
+ </ng-template>
+
+ <ng-template #elseBlock2>
+  <p>checkbox is unchecked using elseBlock2</p>
+ </ng-template>
+
+ <!-- Last way to ngIf -->
+<h1>Using hidden predefined inbuild property</h1>
+
+<p [hidden]="!show">
+  show is checked, content redered when show is false. This is called hidden property binding
+</p>
+<p [hidden]="show">
+  show is un-checked, content rendered when show is true. This is callled hidden property binding.
+</p>
+
+Input Num Value <input type="text" [(ngModel)] = "num" />
+  <div [ngSwitch]="num">
+    <div *ngSwitchCase="'1'">One</div>
+    <div *ngSwitchCase="'2'">Two</div>
+    <div *ngSwitchCase="'3'">Three</div>
+    <div *ngSwitchCase="'4'">Four</div>
+    <div *ngSwitchCase="'5'">Five</div>
+    <div *ngSwitchDefault>This is default when 1 to 5 is not entered in a textbox</div>
+  </div>
+
+<div class='card'>
+  <div class='card-header'>
+    ngSwitch using ng-template - using BootStrap css 5 classes
+  </div>
+</div>
+
+<div class='card-body'>
+  <select [(ngModel)]="selectValue1">
+    <option *ngFor="let item of arrayOfObjects;" [value]="item.value">
+      {{ item.name }}
+    </option>
+  </select>
+
+  <div [ngSwitch]="selectValue1">
+    <ng-template [ngSwitchCase]="'10'">One combobox item is selected from above</ng-template>
+    <ng-template [ngSwitchCase]="'20'">Two combobox item is selected from above</ng-template>
+    <ng-template [ngSwitchDefault]>This is a default value if any other values is selected
+      apart from 1 and 2
+    </ng-template>
+  </div>
+</div>
