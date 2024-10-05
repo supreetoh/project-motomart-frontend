@@ -1,0 +1,145 @@
+.navbar-tabs {
+  display: flex; /* Use flexbox to arrange tabs in a row */
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-tabs li {
+  margin-left: 20px; /* Add space between tabs */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.navbar-tabs li:hover {
+  text-decoration: underline; /* Optional: underline on hover for visual feedback */
+}
+
+  
+  .logo img {
+    height: 40px; /* Adjust logo size */
+    cursor: pointer;
+  }
+  
+  .admin-name {
+    font-size: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(-100%); /* Hidden by default */
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar */
+  }
+  
+  .main-content {
+    margin-left: 220px; /* Adjust according to sidebar width */
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 22%; /* Adjust width as necessary */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-logo {
+    height: 30px; /* Adjust logo size */
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  
+
+
+
+  .orders-card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button {
+    background-color: #dc3545; /* Bootstrap Danger Color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+
+  
+
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .navbar-tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-tabs li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navbar-tabs li:hover {
+    text-decoration: underline;
+  }
+  

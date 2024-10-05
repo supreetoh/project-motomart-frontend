@@ -22,6 +22,10 @@ import { TestFormComponent } from './app/test-form/test-form.component';
 import { EcommerceHomeComponent } from './app/ecommerce-home/ecommerce-home.component';
 import { EcommerceReviewComponent } from './app/ecommerce-review/ecommerce-review.component';
 import { LoginPageComponent } from './app/login-page/login-page.component';
+import { AdminPageComponent } from './app/admin-page/admin-page.component';
+import { AdminProductsComponent } from './app/admin-products/admin-products.component';
+import { AdminOrdersComponent } from './app/admin-orders/admin-orders.component';
+import { AdminUsersComponent } from './app/admin-users/admin-users.component';
 
-bootstrapApplication(EcommerceHomeComponent, appConfig)
+bootstrapApplication(AdminUsersComponent, appConfig)
   .catch((err) => console.error(err));
