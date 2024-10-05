@@ -1,6 +1,7 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-admin-page',
   standalone: true,
@@ -9,22 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './admin-page.component.css'
 })
 export class AdminPageComponent {
-  isSidebarOpen = false;
-
-  toggleSidebar(event: MouseEvent) {
-    event.stopPropagation(); // Prevent click from bubbling up
-    this.isSidebarOpen = !this.isSidebarOpen;
-  }
-
-  closeSidebar() {
-    this.isSidebarOpen = false;
-  }
-
-  sidebarAction(tab: string) {
-    console.log(`Clicked on ${tab}`);
-    this.closeSidebar(); // Close sidebar after clicking
-  }
-
+ 
   totalOrders = 120;        // Example data
   pendingOrders = 30;       // Example data
   deliveredOrders = 80;     // Example data

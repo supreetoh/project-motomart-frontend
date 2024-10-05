@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { LoginComponent } from './pages/general/login/login.component';
 import { SignupComponent } from './pages/general/signup/signup.component';
 import { NotFoundComponent } from './pages/general/not-found/not-found.component';
@@ -26,8 +27,34 @@ import { RegisterComponent } from './frontend-for-emp/register/register.componen
 import { ForgotPasswordComponent } from './frontend-for-emp/forgot-password/forgot-password.component';
 import { EcommerceHomeComponent } from './ecommerce-home/ecommerce-home.component';
 import { EcommerceReviewComponent } from './ecommerce-review/ecommerce-review.component';
+import { AdminPageComponent } from './admin-page/admin-page.component'; // Ensure this exists
+import { AdminProductsComponent } from './admin-products/admin-products.component'; // Make sure this component exists
+import { AdminOrdersComponent } from './admin-orders/admin-orders.component'; // Make sure this component exists
+import { AdminUsersComponent } from './admin-users/admin-users.component'; // Make sure this component exists
 
 export const routes: Routes = [
+
+  // { path: 'admin-page', component: AdminPageComponent },
+  // { path: 'admin-products', component: AdminProductsComponent },
+  // { path: 'admin-orders', component: AdminOrdersComponent },
+  // { path: 'admin-users', component: AdminUsersComponent },
+  // { path: '', redirectTo: '/admin-page', pathMatch: 'full' },
+  // { path: '**', redirectTo: '/admin-page' }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // {path: '', component: HomeComponent},
     // {path: 'login', component: LoginComponent},
     // {path: 'signup', component: SignupComponent},
@@ -48,20 +75,22 @@ export const routes: Routes = [
     //         {path: 'website', component: WebsiteComponent},
     //     ],
     // },
-  { path: '', redirectTo: 'ecommerce-review', pathMatch: 'full' },
-  { path: 'ecommerce-review', component: EcommerceReviewComponent },
-  { path: 'ecommerce-home', component: EcommerceHomeComponent },
-    {path: 'home', component: HomeComponent},
-    {path: 'login', component: AdminComponent},
-    {path: 'register', component: RegisterComponent},
-    {path: 'forgot-password', component: ForgotPasswordComponent},
-    {path: 'run-emp-project', component: RunEmpProjectComponent},
-    {path: 'add-employees', component: AddEmployeeComponent},
-    {path: 'show-all-employees', component: EmployeeListComponent},
-    {path: 'details-of-employee/:id', component: ShowDetailsComponent},
-    {path: 'updating-by-id/:id', component: UpdateEmployeeComponent},
-    {path: '**', component: NotFoundComponent}
+  // { path: '', redirectTo: 'ecommerce-review', pathMatch: 'full' },
+  // { path: 'ecommerce-review', component: EcommerceReviewComponent },
+  // { path: 'ecommerce-home', component: EcommerceHomeComponent },
+  //   {path: 'home', component: HomeComponent},
+  //   {path: 'login', component: AdminComponent},
+  //   {path: 'register', component: RegisterComponent},
+  //   {path: 'forgot-password', component: ForgotPasswordComponent},
+  //   {path: 'run-emp-project', component: RunEmpProjectComponent},
+  //   {path: 'add-employees', component: AddEmployeeComponent},
+  //   {path: 'show-all-employees', component: EmployeeListComponent},
+  //   {path: 'details-of-employee/:id', component: ShowDetailsComponent},
+  //   {path: 'updating-by-id/:id', component: UpdateEmployeeComponent},
+  //   {path: '**', component: NotFoundComponent}
     // {path: 'tutorials', component: TutorialsListComponent},
     // {path: 'tutorials/:id', component: TutorialsDetailsComponent},
     // {path: 'add', component: AddTutorialComponent}
 ];
+
+

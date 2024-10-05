@@ -1,6 +1,6 @@
-<div (click)="closeSidebar()">
+<div >
     <!-- Navbar -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="logo" (click)="goToHome($event)">
           <img src="path-to-your-logo.png" alt="Logo" />
         </div>
@@ -10,17 +10,21 @@
           <li (click)="goTo('orders')">Orders</li>
           <li (click)="goTo('admin')">Admin</li>
         </ul>
+      </nav> -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="path-to-your-logo.png" alt="Logo" />
+        </div>
+        <ul class="navbar-tabs">
+          <li><a routerLink="/admin-products">Products</a></li>
+          <li><a routerLink="/admin-orders">Orders</a></li>
+          <li><a routerLink="/admin-users">Admin Users</a></li>
+          <li><a routerLink="#">Home</a></li>
+        </ul>
       </nav>
+      
+      
   
-    <!-- Sidebar -->
-    <!-- <div class="sidebar" [ngClass]="{'open': isSidebarOpen}" (click)="$event.stopPropagation()">
-      <ul>
-        <li (click)="sidebarAction('Tab 1')">Tab 1</li>
-        <li (click)="sidebarAction('Tab 2')">Tab 2</li>
-        <li (click)="sidebarAction('Tab 3')">Tab 3</li>
-        <li (click)="sidebarAction('Tab 4')">Tab 4</li>
-      </ul>
-    </div> -->
   
     <!-- Main Content -->
     <div class="main-content">

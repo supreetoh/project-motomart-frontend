@@ -27,5 +27,5 @@ import { AdminProductsComponent } from './app/admin-products/admin-products.comp
 import { AdminOrdersComponent } from './app/admin-orders/admin-orders.component';
 import { AdminUsersComponent } from './app/admin-users/admin-users.component';
 
-bootstrapApplication(AdminUsersComponent, appConfig)
+bootstrapApplication(AdminPageComponent, appConfig)
   .catch((err) => console.error(err));
