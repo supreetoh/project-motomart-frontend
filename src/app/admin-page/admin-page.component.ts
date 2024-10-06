@@ -1,11 +1,12 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-admin-page',
   standalone: true,
-  imports: [CommonModule,NgFor],
+  imports: [CommonModule,NgFor,RouterOutlet,RouterLink],
   templateUrl: './admin-page.component.html',
   styleUrl: './admin-page.component.css'
 })

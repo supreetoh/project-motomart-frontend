@@ -1,60 +1,60 @@
 <div >
-    <!-- Navbar -->
-    <!-- <nav class="navbar">
-        <div class="logo" (click)="goToHome($event)">
-          <img src="path-to-your-logo.png" alt="Logo" />
-        </div>
-        <ul class="navbar-tabs">
-          <li (click)="goTo('home')">Home</li>
-          <li (click)="goTo('products')">Products</li>
-          <li (click)="goTo('orders')">Orders</li>
-          <li (click)="goTo('admin')">Admin</li>
-        </ul>
-      </nav> -->
-      <nav class="navbar">
-        <div class="logo">
-          <img src="path-to-your-logo.png" alt="Logo" />
-        </div>
-        <ul class="navbar-tabs">
-          <li><a routerLink="/admin-products">Products</a></li>
-          <li><a routerLink="/admin-orders">Orders</a></li>
-          <li><a routerLink="/admin-users">Admin Users</a></li>
-          <li><a routerLink="#">Home</a></li>
-        </ul>
-      </nav>
+  <!-- Navbar -->
+  <!-- <nav class="navbar">
+      <div class="logo" (click)="goToHome($event)">
+        <img src="path-to-your-logo.png" alt="Logo" />
+      </div>
+      <ul class="navbar-tabs">
+        <li (click)="goTo('home')">Home</li>
+        <li (click)="goTo('products')">Products</li>
+        <li (click)="goTo('orders')">Orders</li>
+        <li (click)="goTo('admin')">Admin</li>
+      </ul>
+    </nav> -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="path-to-your-logo.png" alt="Logo" />
+      </div>
+      <ul class="navbar-tabs">
+        <li><a routerLink="/admin-products">Products</a></li>
+        <li><a routerLink="/admin-orders">Orders</a></li>
+        <li><a routerLink="/admin-users">Admin Users</a></li>
+        <li><a routerLink="#">Home</a></li>
+      </ul>
+    </nav>
       
       
   
   
     <!-- Main Content -->
     <div class="main-content">
-      <h1>Welcome to the Admin Page</h1>
+      <h3 class="f1">Welcome to the Admin Page</h3>
       <!-- Additional content goes here -->
     </div>
   </div>
 <!--------------------->  
 
 <div class="home-container">
-    <h1>Admin Dashboard</h1>
+    <h3 class="f1">Admin Dashboard</h3>
     <div class="cards">
       <div class="card">
         <img src="path-to-your-logo.png" alt="Logo" class="card-logo" />
-        <h2>Total Orders</h2>
+        <h4>Total Orders</h4>
         <p>{{ totalOrders }}</p>
       </div>
       <div class="card">
         <img src="path-to-your-logo.png" alt="Logo" class="card-logo" />
-        <h2>Pending Orders</h2>
+        <h4>Pending Orders</h4>
         <p>{{ pendingOrders }}</p>
       </div>
       <div class="card">
         <img src="path-to-your-logo.png" alt="Logo" class="card-logo" />
-        <h2>Delivered Orders</h2>
+        <h4>Delivered Orders</h4>
         <p>{{ deliveredOrders }}</p>
       </div>
       <div class="card">
         <img src="path-to-your-logo.png" alt="Logo" class="card-logo" />
-        <h2>Total Revenue</h2>
+        <h4>Total Revenue</h4>
         <p>{{ totalRevenue }}</p>
       </div>
     </div>

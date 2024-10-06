@@ -34,12 +34,12 @@ import { AdminUsersComponent } from './admin-users/admin-users.component'; // Ma
 
 export const routes: Routes = [
 
-  // { path: 'admin-page', component: AdminPageComponent },
-  // { path: 'admin-products', component: AdminProductsComponent },
-  // { path: 'admin-orders', component: AdminOrdersComponent },
-  // { path: 'admin-users', component: AdminUsersComponent },
-  // { path: '', redirectTo: '/admin-page', pathMatch: 'full' },
-  // { path: '**', redirectTo: '/admin-page' }
+  { path: 'admin-page', component: AdminPageComponent },
+  { path: 'admin-products', component: AdminProductsComponent },
+  { path: 'admin-orders', component: AdminOrdersComponent },
+  { path: 'admin-users', component: AdminUsersComponent },
+  { path: '', redirectTo: '/admin-page', pathMatch: 'full' },
+  { path: '**', redirectTo: '/admin-page' }
 
 
 
