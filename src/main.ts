@@ -29,5 +29,5 @@ import { AdminUsersComponent } from './app/admin-users/admin-users.component';
 import { FindBikesComponent } from './app/find-bikes/find-bikes.component';
 import { ViewBikeComponent } from './app/view-bike/view-bike.component';
 
-bootstrapApplication(ViewBikeComponent, appConfig)
+bootstrapApplication(FindBikesComponent, appConfig)
   .catch((err) => console.error(err));
