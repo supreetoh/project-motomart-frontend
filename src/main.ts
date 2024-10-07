@@ -26,6 +26,8 @@ import { AdminPageComponent } from './app/admin-page/admin-page.component';
 import { AdminProductsComponent } from './app/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './app/admin-orders/admin-orders.component';
 import { AdminUsersComponent } from './app/admin-users/admin-users.component';
+import { FindBikesComponent } from './app/find-bikes/find-bikes.component';
+import { ViewBikeComponent } from './app/view-bike/view-bike.component';
 
-bootstrapApplication(AdminPageComponent, appConfig)
+bootstrapApplication(ViewBikeComponent, appConfig)
   .catch((err) => console.error(err));
