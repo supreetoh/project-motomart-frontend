@@ -1,67 +1,97 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8; /* Soft background color */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Orders page styling */
+.orders-page {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px;
+  max-width: 800px; /* Limit the width for better layout */
+  width: 100%; /* Responsive width */
+  text-align: center; /* Center text */
+}
+
+/* Header styling */
+h3 {
+  font-size: 28px; /* Larger font size */
+  margin-bottom: 20px;
+  color: #2C3E50; /* Darker header color for contrast */
+}
+
+/* Orders card styling */
 .orders-card {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  .orders-card table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .orders-card th, .orders-card td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #dee2e6;
-  }
+  text-align: left; /* Align text in the table */
+}
 
-  .orders-card {
-    margin: 20px; /* Margin around the orders card */
-    padding: 20px; /* Padding inside the card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-    border-radius: 8px; /* Rounded corners for the card */
-}
-h2{
-  padding-top: 25px;
-}
 table {
-    width: 100%; /* Full width for the table */
-    border-collapse: collapse; /* Collapse borders */
-}
-
-thead {
-    background-color: #090635; /* Blue background for header */
-    color: white; /* White text color for header */
-    border-radius: 40px; /* Rounded corners for the header */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 5); /* Black shadow around header */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Margin for spacing */
 }
 
 th, td {
-    padding: 10px; /* Padding inside table cells */
-    text-align: left; /* Align text to the left */
-    font-weight: bold; /* Make text bold */
+  padding: 15px; /* Increased padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    border-radius: 40px; /* Rounded corners for header cells */
+  background: #2980B9; /* Match button color */
+  color: #ffffff;
+  font-weight: 700; /* Bolder font weight for headers */
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternate row color */
+tr:hover {
+  background: #ecf0f1; /* Subtle hover effect */
 }
 
-tbody tr:hover {
-    background-color: #f1f1f1; /* Hover effect for rows */
-}
-
+/* Button styling for actions */
 button {
-    padding: 5px 10px; /* Padding for buttons */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners for buttons */
-    cursor: pointer; /* Pointer cursor on hover */
+  background-color: #ffffff; /* Light background */
+  color: #2980B9; /* Text color matching the primary color */
+  border: 1px solid #2980B9; /* Border color matching text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 15px; /* Comfortable padding */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Added shadow transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
+
+  button:hover {
+    background-color: #f0f4f8; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+
+/* Select styling */
+select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-left: 5px;
+  background-color: #fff;
+}
+
  
 .navbar {
   height: 50px;

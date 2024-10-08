@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .navbar {
   height: 50px;
@@ -15,84 +16,110 @@
   margin: 0;
 }
 
-.navbar-tabs li {
-  margin: 0 15px; /* Space between tabs */
-  font-weight: bold; /* Make font bolder */
-  cursor: pointer; /* Change cursor to pointer */
+  .navbar-tabs li {
+    margin: 0 15px; /* Space between tabs */
+    font-weight: bold; /* Make font bolder */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo img {
-  height: 40px; /* Adjust logo size as needed */
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8; /* Soft background color */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-  .create-admin-btn {
-    background-color: #1a9135; /* Bootstrap Primary Color */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 2); /* Shadow below navbar */
+/* Admin users page styling */
+.admin-users-page {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px;
+  max-width: 800px; /* Limit the width for better layout */
+  width: 100%; /* Responsive width */
+  text-align: center; /* Center text */
+}
 
-  }
-  
-  .create-admin-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  .users-card {
-    margin: 20px; /* Margin around the users card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-    padding: 20px; /* Padding inside the card */
-    border-radius: 8px; /* Rounded corners for the card */
+/* Header styling */
+h1 {
+  font-size: 28px; /* Larger font size */
+  margin-bottom: 20px;
+  color: #2C3E50; /* Darker header color for contrast */
 }
 
 h2 {
-    margin-bottom: 15px; /* Space below the heading */
+  font-size: 24px; /* Size for sub-header */
+  margin-bottom: 20px;
+  color: #2C3E50; /* Consistent header color */
+}
+
+/* Button styling */
+.create-admin-btn {
+  background-color: #2980B9; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 25px; /* Larger padding */
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.create-admin-btn:hover {
+  background-color: #1A669B; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Users card styling */
+.users-card {
+  text-align: left; /* Align text in the table */
 }
 
 table {
-    width: 100%; /* Full width for the table */
-    border-collapse: collapse; /* Collapse borders */
-    
-}
-
-thead {
-    background-color: #090635; /* Blue background for header */
-    color: white; /* White text color for header */
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0; /* Margin for spacing */
 }
 
 th, td {
-    padding: 10px; /* Padding inside table cells */
-    text-align: left; /* Align text to the left */
-    font-weight: bold; /* Make text bold */
+  padding: 15px; /* Increased padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for the header cells */
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternate row color */
+  background: #2980B9; /* Match button color */
+  color: #ffffff;
+  font-weight: 700; /* Bolder font weight for headers */
 }
 
 tr:hover {
-    background-color: #f1f1f1; /* Hover effect for rows */
+  background: #ecf0f1; /* Subtle hover effect */
 }
 
+/* Button styling for delete */
 .delete-btn {
-    background-color: #dc3545; /* Red background for delete button */
-    color: white; /* White text for button */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners for button */
-    padding: 5px 10px; /* Padding for button */
-    cursor: pointer; /* Pointer cursor on hover */
+  background-color: #e74c3c; /* Danger color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 15px; /* Button padding */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
 }
 
 .delete-btn:hover {
-    background-color: #c82333; /* Darker shade on hover */
+  background-color: #c0392b; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect */
 }
